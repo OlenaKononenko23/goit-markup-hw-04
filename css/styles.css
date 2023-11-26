@@ -43,7 +43,9 @@ img{
 }
 
 .page-header{
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-nav{
@@ -76,6 +78,10 @@ img{
 .menu-list{
     display: flex;
     gap: 40px;
+}
+
+.menu-item{
+    color: #404bbf;
 }
 
 .menu-link{
@@ -271,11 +277,11 @@ img{
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);    
 }
 
 .team-img{
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 .team{
@@ -288,7 +294,7 @@ img{
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
-    padding: 32px 0 
+    padding: 32px 0;
 }
 
 .team-subtitle{
@@ -319,10 +325,17 @@ img{
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    width: 40px;
-    height: 40px;
+    /* width: 40px; */
+    /* height: 40px; */
     /* border-radius: 50%; */
     /* background: #4D5AE5; */
+}
+
+.icon-item{
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 40px;
+    height: 40px;
+    fill: #f4f4fd;
 }
 
 .icon-link{
@@ -340,12 +353,10 @@ img{
     background-color: #404bbf;
 }
 
-.icon-item{
-    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .icon-team{
-    fill: #f4f4fd;
+    /* fill: #f4f4fd; */
 }
 
            /* PORTFOLIO */
@@ -372,8 +383,6 @@ img{
     flex-direction: column;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     transform: translateY(0%);
-
-    
 }
 
 .portfolio-item:hover,
@@ -406,7 +415,7 @@ img{
     color: #434455;
 }
 
-.box{
+.container-overlay{
     position: relative;
     width: 360px;
     height: 300px;
@@ -420,10 +429,10 @@ img{
     
   
     
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
   
-.box:hover .overlay {
+.container-overlay:hover .overlay {
     transform: translatey(0);
 }
   
@@ -489,7 +498,6 @@ img{
 }
 
 .footer-list{
-    /* display: inline-flex; */
     gap: 16px;
     display: flex;
 }
@@ -497,4 +505,14 @@ img{
 .icon-footer:hover,
 .icon-footer:focus{
     fill: #f4f4fd;
+}
+
+.footer-item{
+    width: 40px;
+    height: 40px;
+}
+
+.icon-link-footer:hover,
+.icon-link-footer:focus{
+    background-color: #31D0AA;
 }
