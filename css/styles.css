@@ -1,6 +1,11 @@
 *{
     list-style-type: none;
 }
+
+:root{
+    --color1: #f4f4fd;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -484,7 +489,7 @@ img{
 }
 
 .icon-footer{
-    fill: var(#f4f4fd);
+    fill: var(--color1, #f4f4fd);
 }
 
 .footer-item{
