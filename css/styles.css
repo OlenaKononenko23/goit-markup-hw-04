@@ -483,6 +483,10 @@ img{
     fill: #f4f4fd;
 }
 
+.icon-footer{
+    fill: var(#f4f4fd);
+}
+
 .footer-item{
     width: 40px;
     height: 40px;
